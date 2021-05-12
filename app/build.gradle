@@ -1,7 +1,12 @@
 plugins {
     id 'com.android.application'
     id 'kotlin-android'
+    //引用插件,这里可以看到输出apply，正是插件所实现的功能
+    //这里的MyPlugin与‎⁨APPLE SSD SM0256G Media⁩ ▸ ⁨用户⁩ ▸ ⁨henry⁩ ▸ ⁨.m2⁩ ▸ ⁨repository⁩ ▸ ⁨com⁩ ▸ ⁨example⁩ ▸ ⁨plugin⁩ ▸ ⁨1.0.2⁩
+    //中的/META-INF/gradle-plugins/MyPlugin.properties中的MyPlugin对应起来
+    id 'MyPlugin'
 }
+
 
 android {
     compileSdkVersion 30
